@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
 
 :root{
 
@@ -20,6 +22,7 @@
 
     --font-fraunces: 'Fraunces', serif;
     --font-barlow: 'Barlow', sans-serif;
+
 
 }
 
@@ -78,6 +81,7 @@ body{
     list-style: none;
     text-decoration: none;
     color: inherit;
+    
 }
 
 
@@ -88,7 +92,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -136,3 +140,80 @@ body{
     text-align: center;
     font-size: 50px;
 }
+
+/* ---------------Discription Sections--------------- */
+
+.mid-section:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+.mid-section{
+    display: flex;
+    width: 100%;
+}
+
+.discription-side{
+    margin-top: 200px;
+    margin-left: 120px;
+    width: 50%;
+    flex: 1;
+}
+
+.image{
+    width: 50%;
+    
+}
+.discription-side>h1{
+    line-height: 28px;
+    width: 65%;
+    font-size: 33px;
+    font-weight: 900;
+    font-family: var(--font-fraunces);
+    padding-bottom: 40px;
+}
+
+.discription-side>p{
+    line-height: 30px;
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    font-family: var(--font-barlow);
+    width: 65%;
+    padding-bottom: 40px;
+}
+.discription-side>span{
+    font-family: var(--font-fraunces);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.discription-side>span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 7px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Yellow);
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom right;
+    z-index: -1;
+}
+
+.discription-side>span:hover::after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+.duble-img{
+    width: 100%;
+}
+
+.duble-img>div{
+    flex: 1;
+}
+
+
