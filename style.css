@@ -11,7 +11,7 @@
     --Yellow: hsl(51, 100%, 49%);
     --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
     --Dark-blue-photography-text: hsl(198, 62%, 26%);
-    --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    --Dark-moderate-cyan-footer: hsl(168, 24%, 46%);
 
     /* ### Neutral */
     --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -186,6 +186,7 @@ body{
     font-size: 12px;
     letter-spacing: 1px;
     position: relative;
+    cursor: pointer;
 }
 
 .discription-side>span::after{
@@ -201,6 +202,7 @@ body{
     transition: transform 0.25s ease-out;
     transform-origin: bottom right;
     z-index: -1;
+    
 }
 
 .discription-side>span:hover::after{
@@ -208,6 +210,7 @@ body{
     transform-origin: bottom left;
 }
 
+/* --------------2  imges-------------- */
 .duble-img{
     width: 100%;
 }
@@ -215,5 +218,192 @@ body{
 .duble-img>div{
     flex: 1;
 }
+
+.img1, .img2{
+    width: 100%;
+  
+}
+.image-position{
+    position: relative;
+}
+
+.images-description{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.images-description>p{
+    text-align: center;
+    color: var(--Dark-blue-photography-text);
+    font-family: var(--font-barlow);
+    font-size: 15px;
+    line-height: 22px;
+
+
+}
+
+.images-description>h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: var(--Dark-blue-photography-text);
+    font-family: var(--font-fraunces);
+}
+
+/* ------------------TESTIMONIALS SECTION------------ */
+
+.testimonials-section{
+    width: 100%;
+    /* height: 600px; */
+
+}
+
+.testimonials-section>h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-family: var(--font-fraunces);
+    color: var(--Grayish-blue);
+    letter-spacing: 5px;
+}
+
+.testimonials-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials-elements{
+    width: 400px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.img-per{
+    margin-left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+.img-per img{
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.testimonials-elements>p{
+    font-family: var(--font-barlow);
+    color: var(--Very-dark-grayish-blue);
+    line-height: 22px;
+    font-size: 15px;
+    width: 60%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-top: 40px;
+    padding-bottom: 40px;   
+}
+
+
+.testimonials-elements>span{
+    font-family: var(--font-fraunces);
+    font-size: 15px;
+    position: relative;
+}
+
+.emily::after{
+    content: 'Marketing Director';
+    position: absolute;
+    font-size: 11px;
+    color: var(--Grayish-blue);
+    font-family: var(--font-barlow);
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    padding-top: 20px;
+}
+.thomas::after{
+    content: 'Chief Operating Officer';
+    position: absolute;
+    font-size: 11px;
+    color: var(--Grayish-blue);
+    font-family: var(--font-barlow);
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    padding-top: 20px;
+}
+.jennie::after{
+    content: 'Business Owner';
+    position: absolute;
+    font-size: 11px;
+    color: var(--Grayish-blue);
+    font-family: var(--font-barlow);
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    padding-top: 20px;
+}
+
+/* ------------------------- */
+.gallery-images{
+    display: flex;
+    width: 100%;  
+}
+
+.gal-img{
+    width: 100%;
+}
+
+/* ----------------------------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color:var(--Dark-moderate-cyan-footer) ;
+}
+
+footer>div{
+    padding-top: 50px;
+}
+
+.footer-logo{
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.link-items{
+    margin-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.socail-logos{
+    display: flex;
+}
+.socail-logos>li{
+    margin-left: 30px;
+    padding-bottom: 50px;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    font-size: 20px;
+}
+
+
+
+
+
+
 
 
